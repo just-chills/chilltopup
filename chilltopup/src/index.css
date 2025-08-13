@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer base{
+    @font-face {
+        font-family: 'DB Heavent Bold';
+        src: url('./font/DBHeaventBold.ttf') format('ttf');
+        font-weight: 700;
+        font-style: normal;
+}
+}
