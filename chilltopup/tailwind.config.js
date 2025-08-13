@@ -19,9 +19,6 @@ export default {
           sm : '3rem',
         },
       },
-      fontFamily: {
-        'heavent': ['"DB Heavent Bold"'],
-      },
     },
   },
   plugins: [],
