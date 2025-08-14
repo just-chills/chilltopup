@@ -4,7 +4,7 @@ function Flash() {
   return (
     <>
       {/* promotion */}
-      <div className=''>
+      <div className='container flex justify-center items-center'>
         {/* img section */}
         <img src="" alt="" />
         <img src="" alt="" />
@@ -13,7 +13,7 @@ function Flash() {
         <div className='w-full px-[12px] mx-[280px] '>
           {/* header */}
           <div className="text-center pb-4">
-            <h1 className='text-[#000] text-[70px] leading-[72px] font-heavent font-bold'>FLASH SALE</h1>
+            <h1 className='text-[#000] text-[70px] leading-[72px] font-bold'>FLASH SALE</h1>
             <div className='flex justify-center'>
               {/* underline */}
               <div className='w-[180px] border-[6px] mt-3 border-primary'></div>
