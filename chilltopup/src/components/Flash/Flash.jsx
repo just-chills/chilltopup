@@ -16,12 +16,12 @@ function Flash() {
             <h1 className='text-[#000] text-[70px] leading-[72px] font-heavent font-bold'>FLASH SALE</h1>
             <div className='flex justify-center'>
               {/* underline */}
-              <div className='w-24 border-8 border-primary'></div>
+              <div className='w-[180px] border-[6px] mt-3 border-primary'></div>
             </div>
           </div>
           <div>
             {/* row */}
-            <div>
+            <div className='flex gap-4'>
               {/* col */}
               <div>
                 {/* card */}
@@ -29,9 +29,11 @@ function Flash() {
                   {/* thumnail */}
                   <div>
                     {/* responsive sizer */}
-                    <div></div>
-                    {/* image */}
                     <div>
+
+                    </div>
+                    {/* image */}
+                    <div className='w-[664px]'>
                       <img src="https://gameon.ais.co.th/api/cms-data-service/product/461d6a18-8275-4d53-bb97-7db604144b4f-ign-GameOn-thumbnail_Valorant-5.jpg" alt="" />
                     </div>
                     {/* responsive_contetnt */}
@@ -111,11 +113,11 @@ function Flash() {
               {/* col-md-6 col-12 */}
               <div>
                 {/* contain-merge */}
-                <div>
+                <div className='grid gap-4'>
                   {/* card */}
                   <div>
                     {/* row */}
-                    <div>
+                    <div className='flex gap-4'>
                       {/* col col-6 */}
                       <div>
                         {/* image responsive */}
@@ -123,7 +125,7 @@ function Flash() {
                           {/* responsive_sizer */}
                           <div></div>
                           {/* image */}
-                          <div>
+                          <div className='w-[332px]'>
                             <img src="https://gameon.ais.co.th/api/cms-data-service/product/cea62c2f-3d82-4e41-b6dc-d0973fba3831-ign-240524-FC-mobile-logo.png" alt="" />
                           </div>
                           {/* responsive_contetnt */}
@@ -198,7 +200,7 @@ function Flash() {
                   {/* card */}
                   <div>
                     {/* row */}
-                    <div>
+                    <div className='flex gap-4 '>
                       {/* col col-6 */}
                       <div>
                         {/* promotion_inner */}
@@ -261,7 +263,7 @@ function Flash() {
                         {/* genshin logo */}
                         <div>
                           <div></div>
-                          <div>
+                          <div className='w-[332px]'>
                             <img src="https://gameon.ais.co.th/api/cms-data-service/product/eeffaed8-6f61-41b8-b76a-022ca7ce89bd-ign-genshin%20logo%20new.jpg" alt="" />
                           </div>
                           <div></div>
@@ -273,7 +275,7 @@ function Flash() {
               </div>
             </div>
             {/* row */}
-            <div>
+            <div className='flex gap-4'>
               {/* col */}
               <div>
                 {/* card */}
@@ -281,7 +283,7 @@ function Flash() {
                   {/* harry */}
                   <div>
                     <div></div>
-                    <div>
+                    <div className='w-[440px]'>
                       <img src="https://gameon.ais.co.th/api/cms-data-service/product/05b0c664-aa68-4ef8-8ee4-132fd93cdab0-ign-harry%20(1).png" alt="" />
                     </div>
                     <div></div>
@@ -363,7 +365,7 @@ function Flash() {
                   {/* Onmyo */}
                   <div>
                     <div></div>
-                    <div>
+                    <div className='w-[440px]'>
                       <img src="https://gameon.ais.co.th/api/cms-data-service/product/e5725b94-c531-4fd6-af57-fa5c257d46bc-ign-Onmyo15-may25-TN.jpg" alt="" />
                     </div>
                     <div></div>
@@ -433,7 +435,7 @@ function Flash() {
                     </button>
                     <button>
                       <span>
-                        <img src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
+                        <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
                       </span>
                     </button>
                   </div>
@@ -446,7 +448,7 @@ function Flash() {
                   {/* thumnail */}
                   <div>
                     <div></div>
-                    <div>
+                    <div className='w-[440px]'>
                       <img src="https://gameon.ais.co.th/api/cms-data-service/product/b72a9aaf-7d25-4c6a-b58c-1aedd77a35c0-ign-GameOn-thumbnail_LoL-5.jpg" alt="" />
                     </div>
                     <div></div>
@@ -524,17 +526,17 @@ function Flash() {
               </div>
             </div>
             {/* row */}
-            <div>
+            <div className='flex gap-4'>
               {/* col-12 */}
               <div>
                 {/* card */}
                 <div>
-                  <div>
+                  <div className='flex gap-4'>
                     {/* col-6 */}
                     <div>
                       <div>
                         <div></div>
-                        <div>
+                        <div className='w-[332px]'>
                           <img src="https://gameon.ais.co.th/api/cms-data-service/product/e01eba68-39b7-42c4-9a95-1773e3971e5e-ign-eggy-party.jpg" alt="" />
                         </div>
                         <div></div>
@@ -677,7 +679,7 @@ function Flash() {
                       {/* thumnail */}
                       <div>
                         <div></div>
-                        <div>
+                        <div className='w-[332px]'>
                           <img src="https://gameon.ais.co.th/api/cms-data-service/product/a176adf3-b6c0-4940-b603-8dc356116813-ign-GameOn-thumbnail_TFT-5.jpg" alt="" />
                         </div>
                         <div></div>
