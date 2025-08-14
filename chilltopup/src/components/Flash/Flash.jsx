@@ -10,7 +10,7 @@ function Flash() {
         <img src="" alt="" />
         <img src="" alt="" />
         {/* container */}
-        <div className='w-full p-12 mx-auto '>
+        <div className='w-full px-[12px] mx-[280px] '>
           {/* header */}
           <div className="text-center pb-4">
             <h1 className='text-[#000] text-[70px] leading-[72px] font-heavent font-bold'>FLASH SALE</h1>
@@ -21,9 +21,9 @@ function Flash() {
           </div>
           <div>
             {/* row */}
-            <div className='flex gap-4'>
+            <div className='flex gap-3 mb-4'>
               {/* col */}
-              <div>
+              <div className='bg-[#D9D9D9]'>
                 {/* card */}
                 <div>
                   {/* thumnail */}
@@ -45,10 +45,10 @@ function Flash() {
                     <div></div>
                       {/* overlay_content */}
                       <div>
-                        <div>
+                        <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                           <span>SALE NOW</span>
                           {/* chip */}
-                          <span>
+                          <span className='ml-2'>
                             {/* chip_content */}
                             <span>
                               <p>93</p>
@@ -72,13 +72,13 @@ function Flash() {
                           </span>
                         </div>
                         {/* card_promotion_title */}
-                        <h3>VALORANT</h3>
-                        <h4>
+                        <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'>VALORANT</h3>
+                        <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
                           <span>฿260</span>
                             <p>{'>'}</p>
-                          <span>฿247</span>
+                          <span className='text-primary'>฿247</span>
                         </h4>
-                        <p>1000 VP</p>
+                        <p className='text-[#fff] text-[24px] leading-[26px] font-heavent font-bold'>1000 VP</p>
                         <div>
                           <div>
                             {/* progress bar */}
@@ -87,7 +87,7 @@ function Flash() {
                               <div></div>
                               <div></div>
                             </div>
-                            <div> 997 LEFT </div>
+                            <div className='text-[#fff] text-[20px] leading-[40px] font-heavent font-bold'> 997 LEFT </div>
                           </div>
                         </div>
                       </div>
@@ -96,14 +96,14 @@ function Flash() {
                 {/* card promotion action */}
                 <div>
                   <a href="">
-                    <span> Top Up </span>
+                    <span className='mx-2 text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'> Top Up </span>
                   </a>
-                  <button>
+                  <button className='mx-2'>
                     <span>
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAALHSURBVHjarJVPSBx3HMU/M4qy4mZBexLyGzpCRKx/BqGHsiJIKLug5BbJ0mikEUJPbdEczDFHBcFcUu0at6yHtuQUxw0i5CDklENJAkkIGhbBgMlB4hKi1Xm57ARd1CS4D77wZr7ze2++fOH3LGMMB5HP578HfgbOA2eBD8ALIAfcBizgMnABOAecAV4DD4A/gIeHBI0xGGOQVCspKynQ8XhfrJMwLykmCUmE4jFJjySpUChoampKiURCTU1Nam1tVSqVku/7CoJAQRDI930NDg6qublZruuqp6dH09PT2t3dDU3+k/SNJCxjDPl8/m/g4traGgMDA6yvr3MUkskkALlc7si+67qk02lc1wVYAPosSXFgpVAokEgkjhX/UjQ0NLC0tEQ0GgX40QauAqTT6VOLA2xsbDAzMxM+XrGBOMDCwgLlgu/7If3BkhQAVmNjI3t7e2UxqKysZHV1FSCwgf8BqqqqyjZBdXV1SHds4BlAe3t72QxaWlpC+tIG7gH09fWVzaC3tzeki5ak74An29vbxONxtra2TiVeV1fHysoKtbW1AO224zhPgfvRaJSxsbFT//3IyEgongMe28X3vwI7/f39B8f7aiSTSVKpFMAO8DuADeA4zgvgF4CJiQk8z/tqcc/zmJycxLIsgOvA808GRZNZ4FYkEiGTydDZ2fnF4h0dHWQyGSKRCMCfwFTYs0u+/Q24G4vFyGazdHd3f1a8q6uL+fl5YrEYwD/AtYP9QwaO4+wDl4BsTU0Ns7OzDA8Ph2MfgmVZDA0NMTc3Fy71FpAC9o8MnIMlyZJ0MwyfxcVFtbW1yRgjY4w8z9Py8nJ49weSboQBU1pWaWSWxOcF4C/gzObmJqOjo1RUVDA+Pk59fT3Au+Jt/O9xGicaFE2+Be4ApQt5CPwEvDrpvP25JTqO8wroAUaAN8DbIu8q9k7ExwEAPP9uK0iUcMQAAAAASUVORK5CYII=" alt="gameon" />
                     </span>
                   </button>
-                  <button>
+                  <button className='mx-2'>
                     <span>
                       <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
                     </span>
@@ -133,13 +133,13 @@ function Flash() {
                         </div>
                       </div>
                       {/* col col-6 */}
-                      <div>
+                      <div className='bg-[#D9D9D9]'>
                         {/* promotion-inner */}
-                        <div>
-                          <div>
+                        <div >
+                          <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                             <span> SALE NOW </span>
                             {/* chip */}
-                            <span>
+                            <span className='ml-2'>
                               {/* chip_content */}
                               <span>
                                 <p>82</p>
@@ -163,31 +163,31 @@ function Flash() {
                             </span>
                           </div>
                           {/* card-promotion-title */}
-                          <h3> EA SPORTS FC™ MOBILE 24 </h3>
-                          <h4>
+                          <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> EA SPORTS FC™ MOBILE 24 </h3>
+                          <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
                             <span>฿179</span>
                               <p>{'>'}</p>
-                            <span>฿170.05</span>
+                            <span className='text-primary'>฿170.05</span>
                           </h4>
-                          <p> 520 FC POINTS </p>
+                          <p className='text-[#fff] text-[24px] leading-[26px] font-heavent font-bold'> 520 FC POINTS </p>
                           <div>
                             <div></div>
                             <div></div>
                             <div></div>
                           </div>
                           {/* captions */}
-                          <div> 1000 LEFT </div>
+                          <div className='text-[#fff] text-[20px] leading-[40px] font-heavent font-bold'> 1000 LEFT </div>
                           {/* card_promotion_action */}
                           <div>
                             <a href="">
-                              <span> Top Up </span>
+                              <span className='mx-2 text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'> Top Up </span>
                             </a>
-                            <button>
+                            <button className='mx-2'>
                               <span>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAALHSURBVHjarJVPSBx3HMU/M4qy4mZBexLyGzpCRKx/BqGHsiJIKLug5BbJ0mikEUJPbdEczDFHBcFcUu0at6yHtuQUxw0i5CDklENJAkkIGhbBgMlB4hKi1Xm57ARd1CS4D77wZr7ze2++fOH3LGMMB5HP578HfgbOA2eBD8ALIAfcBizgMnABOAecAV4DD4A/gIeHBI0xGGOQVCspKynQ8XhfrJMwLykmCUmE4jFJjySpUChoampKiURCTU1Nam1tVSqVku/7CoJAQRDI930NDg6qublZruuqp6dH09PT2t3dDU3+k/SNJCxjDPl8/m/g4traGgMDA6yvr3MUkskkALlc7si+67qk02lc1wVYAPosSXFgpVAokEgkjhX/UjQ0NLC0tEQ0GgX40QauAqTT6VOLA2xsbDAzMxM+XrGBOMDCwgLlgu/7If3BkhQAVmNjI3t7e2UxqKysZHV1FSCwgf8BqqqqyjZBdXV1SHds4BlAe3t72QxaWlpC+tIG7gH09fWVzaC3tzeki5ak74An29vbxONxtra2TiVeV1fHysoKtbW1AO224zhPgfvRaJSxsbFT//3IyEgongMe28X3vwI7/f39B8f7aiSTSVKpFMAO8DuADeA4zgvgF4CJiQk8z/tqcc/zmJycxLIsgOvA808GRZNZ4FYkEiGTydDZ2fnF4h0dHWQyGSKRCMCfwFTYs0u+/Q24G4vFyGazdHd3f1a8q6uL+fl5YrEYwD/AtYP9QwaO4+wDl4BsTU0Ns7OzDA8Ph2MfgmVZDA0NMTc3Fy71FpAC9o8MnIMlyZJ0MwyfxcVFtbW1yRgjY4w8z9Py8nJ49weSboQBU1pWaWSWxOcF4C/gzObmJqOjo1RUVDA+Pk59fT3Au+Jt/O9xGicaFE2+Be4ApQt5CPwEvDrpvP25JTqO8wroAUaAN8DbIu8q9k7ExwEAPP9uK0iUcMQAAAAASUVORK5CYII=" alt="gameon" />
                               </span>
                             </button>
-                            <button>
+                            <button className='mx-2'>
                               <span>
                                 <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
                               </span>
@@ -202,12 +202,12 @@ function Flash() {
                     {/* row */}
                     <div className='flex gap-4 '>
                       {/* col col-6 */}
-                      <div>
+                      <div className='bg-[#d9d9d9]'>
                         {/* promotion_inner */}
-                        <div>
-                          <div>
+                        <div >
+                          <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                             <span> SALE NOW </span>
-                            <span>
+                            <span className='ml-2'>
                               <span>
                                 <p>81</p>
                               </span>
@@ -225,13 +225,13 @@ function Flash() {
                             </span>
                           </div>
                           {/* card_promotion_title */}
-                          <h3> Genshin Impact </h3>
-                          <h4>
+                          <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> Genshin Impact </h3>
+                          <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
                             <span>฿153</span>
                               <p>{'>'}</p>
-                            <span>฿142.29</span>
+                            <span className='text-primary'>฿142.29</span>
                           </h4>
-                          <p> Blessing of the Welkin Moon </p>
+                          <p className='text-[#fff] text-[24px] leading-[26px] font-heavent font-bold'> Blessing of the Welkin Moon </p>
                           {/* progress bar */}
                           <div>
                             <div></div>
@@ -239,18 +239,18 @@ function Flash() {
                             <div></div>
                           </div>
                           {/* captions */}
-                          <div> 999 LEFT </div>
+                          <div className='text-[#fff] text-[20px] leading-[40px] font-heavent font-bold'> 999 LEFT </div>
                           {/* card_promotion_action */}
                           <div>
                             <a href="">
-                              <span> Top Up </span>
+                              <span className='mx-2 text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'> Top Up </span>
                             </a>
-                            <button>
+                            <button className='mx-2'>
                               <span>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAALHSURBVHjarJVPSBx3HMU/M4qy4mZBexLyGzpCRKx/BqGHsiJIKLug5BbJ0mikEUJPbdEczDFHBcFcUu0at6yHtuQUxw0i5CDklENJAkkIGhbBgMlB4hKi1Xm57ARd1CS4D77wZr7ze2++fOH3LGMMB5HP578HfgbOA2eBD8ALIAfcBizgMnABOAecAV4DD4A/gIeHBI0xGGOQVCspKynQ8XhfrJMwLykmCUmE4jFJjySpUChoampKiURCTU1Nam1tVSqVku/7CoJAQRDI930NDg6qublZruuqp6dH09PT2t3dDU3+k/SNJCxjDPl8/m/g4traGgMDA6yvr3MUkskkALlc7si+67qk02lc1wVYAPosSXFgpVAokEgkjhX/UjQ0NLC0tEQ0GgX40QauAqTT6VOLA2xsbDAzMxM+XrGBOMDCwgLlgu/7If3BkhQAVmNjI3t7e2UxqKysZHV1FSCwgf8BqqqqyjZBdXV1SHds4BlAe3t72QxaWlpC+tIG7gH09fWVzaC3tzeki5ak74An29vbxONxtra2TiVeV1fHysoKtbW1AO224zhPgfvRaJSxsbFT//3IyEgongMe28X3vwI7/f39B8f7aiSTSVKpFMAO8DuADeA4zgvgF4CJiQk8z/tqcc/zmJycxLIsgOvA808GRZNZ4FYkEiGTydDZ2fnF4h0dHWQyGSKRCMCfwFTYs0u+/Q24G4vFyGazdHd3f1a8q6uL+fl5YrEYwD/AtYP9QwaO4+wDl4BsTU0Ns7OzDA8Ph2MfgmVZDA0NMTc3Fy71FpAC9o8MnIMlyZJ0MwyfxcVFtbW1yRgjY4w8z9Py8nJ49weSboQBU1pWaWSWxOcF4C/gzObmJqOjo1RUVDA+Pk59fT3Au+Jt/O9xGicaFE2+Be4ApQt5CPwEvDrpvP25JTqO8wroAUaAN8DbIu8q9k7ExwEAPP9uK0iUcMQAAAAASUVORK5CYII=" alt="gameon" />
                               </span>
                             </button>
-                            <button>
+                            <button className='mx-2'>
                               <span>
                                 <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
                               </span>
@@ -277,9 +277,9 @@ function Flash() {
             {/* row */}
             <div className='flex gap-4'>
               {/* col */}
-              <div>
+              <div className='bg-[#d9d9d9]'>
                 {/* card */}
-                <div>
+                <div >
                   {/* harry */}
                   <div>
                     <div></div>
@@ -289,15 +289,15 @@ function Flash() {
                     <div></div>
                   </div>
                   {/* overlay_promotions */}
-                  <div>
+                  <div >
                     {/* overlay_scrim */}
                     <div></div>
                     {/* overlay_content */}
                     <div>
-                      <div>
+                      <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                         <span> SALE NOW </span>
                         {/* chip */}
-                        <span>
+                        <span className='ml-2'>
                           {/* chip_content */}
                           <span>
                             <p>81</p>
@@ -320,13 +320,13 @@ function Flash() {
                           </span>
                         </span>
                       </div>
-                      <h3>Harry Potter: Magic Awakened</h3>
-                      <h4>
+                      <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'>Harry Potter: Magic Awakened</h3>
+                      <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
                         <span>฿179</span>
                           <p>{'>'}</p>
-                        <span>฿148.57</span>
+                        <span className='text-primary'>฿148.57</span>
                       </h4>
-                      <p>300 Jewels</p>
+                      <p className='text-[#fff] text-[24px] leading-[26px] font-heavent font-bold'>300 Jewels</p>
                       <div>
                         <div>
                           {/* progress bar */}
@@ -335,7 +335,7 @@ function Flash() {
                             <div></div>
                             <div></div>
                           </div>
-                          <div> 1000 LEFT </div>
+                          <div className='text-[#fff] text-[20px] leading-[40px] font-heavent font-bold'> 1000 LEFT </div>
                         </div>
                       </div>
                     </div>
@@ -343,14 +343,14 @@ function Flash() {
                   {/* card */}
                   <div>
                     <a href="">
-                      <span> Top Up </span>
+                      <span className='mx-2 text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'> Top Up </span>
                     </a>
-                    <button>
+                    <button className='mx-2'>
                       <span>
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAALHSURBVHjarJVPSBx3HMU/M4qy4mZBexLyGzpCRKx/BqGHsiJIKLug5BbJ0mikEUJPbdEczDFHBcFcUu0at6yHtuQUxw0i5CDklENJAkkIGhbBgMlB4hKi1Xm57ARd1CS4D77wZr7ze2++fOH3LGMMB5HP578HfgbOA2eBD8ALIAfcBizgMnABOAecAV4DD4A/gIeHBI0xGGOQVCspKynQ8XhfrJMwLykmCUmE4jFJjySpUChoampKiURCTU1Nam1tVSqVku/7CoJAQRDI930NDg6qublZruuqp6dH09PT2t3dDU3+k/SNJCxjDPl8/m/g4traGgMDA6yvr3MUkskkALlc7si+67qk02lc1wVYAPosSXFgpVAokEgkjhX/UjQ0NLC0tEQ0GgX40QauAqTT6VOLA2xsbDAzMxM+XrGBOMDCwgLlgu/7If3BkhQAVmNjI3t7e2UxqKysZHV1FSCwgf8BqqqqyjZBdXV1SHds4BlAe3t72QxaWlpC+tIG7gH09fWVzaC3tzeki5ak74An29vbxONxtra2TiVeV1fHysoKtbW1AO224zhPgfvRaJSxsbFT//3IyEgongMe28X3vwI7/f39B8f7aiSTSVKpFMAO8DuADeA4zgvgF4CJiQk8z/tqcc/zmJycxLIsgOvA808GRZNZ4FYkEiGTydDZ2fnF4h0dHWQyGSKRCMCfwFTYs0u+/Q24G4vFyGazdHd3f1a8q6uL+fl5YrEYwD/AtYP9QwaO4+wDl4BsTU0Ns7OzDA8Ph2MfgmVZDA0NMTc3Fy71FpAC9o8MnIMlyZJ0MwyfxcVFtbW1yRgjY4w8z9Py8nJ49weSboQBU1pWaWSWxOcF4C/gzObmJqOjo1RUVDA+Pk59fT3Au+Jt/O9xGicaFE2+Be4ApQt5CPwEvDrpvP25JTqO8wroAUaAN8DbIu8q9k7ExwEAPP9uK0iUcMQAAAAASUVORK5CYII=" alt="gameon" />
                       </span>
                     </button>
-                    <button>
+                    <button className='mx-2'>
                       <span>
                         <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
                       </span>
@@ -359,9 +359,9 @@ function Flash() {
                 </div>
               </div>
               {/* col-4 */}
-              <div>
+              <div className='bg-[#d9d9d9]'>
                 {/* card */}
-                <div>
+                <div >
                   {/* Onmyo */}
                   <div>
                     <div></div>
@@ -376,10 +376,10 @@ function Flash() {
                     <div></div>
                     {/* overlay_content */}
                     <div>
-                      <div>
+                      <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                         <span> SALE NOW </span>
                         {/* chip */}
-                        <span>
+                        <span className='ml-2'>
                           {/* chip_content */}
                           <span>
                             <p>80</p>
@@ -402,13 +402,13 @@ function Flash() {
                           </span>
                         </span>
                       </div>
-                      <h3> Onmyoji Arena </h3>
-                      <h4>
+                      <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> Onmyoji Arena </h3>
+                      <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
                         <span>฿300</span>
                           <p>{'>'}</p>
-                        <span>฿249</span>
+                        <span className='text-primary'>฿249</span>
                       </h4>
-                      <p>Jade 680</p>
+                      <p className='text-[#fff] text-[24px] leading-[26px] font-heavent font-bold'>Jade 680</p>
                       <div>
                         <div>
                           {/* progress bar */}
@@ -418,7 +418,7 @@ function Flash() {
                             <div></div>
                           </div>
                           {/* captions */}
-                          <div> 1000 LEFT </div>
+                          <div className='text-[#fff] text-[20px] leading-[40px] font-heavent font-bold'> 1000 LEFT </div>
                         </div>
                       </div>
                     </div>
@@ -426,14 +426,14 @@ function Flash() {
                   {/* card_promotion_action */}
                   <div>
                     <a href="">
-                      <span> Top Up </span>
+                      <span className='mx-2 text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'> Top Up </span>
                     </a>
-                    <button>
+                    <button className='mx-2'>
                       <span>
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAALHSURBVHjarJVPSBx3HMU/M4qy4mZBexLyGzpCRKx/BqGHsiJIKLug5BbJ0mikEUJPbdEczDFHBcFcUu0at6yHtuQUxw0i5CDklENJAkkIGhbBgMlB4hKi1Xm57ARd1CS4D77wZr7ze2++fOH3LGMMB5HP578HfgbOA2eBD8ALIAfcBizgMnABOAecAV4DD4A/gIeHBI0xGGOQVCspKynQ8XhfrJMwLykmCUmE4jFJjySpUChoampKiURCTU1Nam1tVSqVku/7CoJAQRDI930NDg6qublZruuqp6dH09PT2t3dDU3+k/SNJCxjDPl8/m/g4traGgMDA6yvr3MUkskkALlc7si+67qk02lc1wVYAPosSXFgpVAokEgkjhX/UjQ0NLC0tEQ0GgX40QauAqTT6VOLA2xsbDAzMxM+XrGBOMDCwgLlgu/7If3BkhQAVmNjI3t7e2UxqKysZHV1FSCwgf8BqqqqyjZBdXV1SHds4BlAe3t72QxaWlpC+tIG7gH09fWVzaC3tzeki5ak74An29vbxONxtra2TiVeV1fHysoKtbW1AO224zhPgfvRaJSxsbFT//3IyEgongMe28X3vwI7/f39B8f7aiSTSVKpFMAO8DuADeA4zgvgF4CJiQk8z/tqcc/zmJycxLIsgOvA808GRZNZ4FYkEiGTydDZ2fnF4h0dHWQyGSKRCMCfwFTYs0u+/Q24G4vFyGazdHd3f1a8q6uL+fl5YrEYwD/AtYP9QwaO4+wDl4BsTU0Ns7OzDA8Ph2MfgmVZDA0NMTc3Fy71FpAC9o8MnIMlyZJ0MwyfxcVFtbW1yRgjY4w8z9Py8nJ49weSboQBU1pWaWSWxOcF4C/gzObmJqOjo1RUVDA+Pk59fT3Au+Jt/O9xGicaFE2+Be4ApQt5CPwEvDrpvP25JTqO8wroAUaAN8DbIu8q9k7ExwEAPP9uK0iUcMQAAAAASUVORK5CYII=" alt="gameon" />
                       </span>
                     </button>
-                    <button>
+                    <button className='mx-2'>
                       <span>
                         <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
                       </span>
@@ -442,9 +442,9 @@ function Flash() {
                 </div>
               </div>
               {/* col-4 */}
-              <div>
+              <div className='bg-[#d9d9d9]'>
                 {/* card */}
-                <div>
+                <div >
                   {/* thumnail */}
                   <div>
                     <div></div>
@@ -459,10 +459,10 @@ function Flash() {
                     <div></div>
                     {/* overlay_content */}
                     <div>
-                      <div>
+                      <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                         <span> SALE NOW </span>
                         {/* chip */}
-                        <span>
+                        <span className='ml-2'>
                           {/* chip_content */}
                           <span>
                             <p>80</p>
@@ -485,13 +485,13 @@ function Flash() {
                           </span>
                         </span>
                       </div>
-                      <h3> League of Legends (PC) </h3>
-                      <h4>
+                      <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> League of Legends (PC) </h3>
+                      <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
                         <span>฿290</span>
                           <p>{'>'}</p>
-                        <span>฿275.5</span>
+                        <span className='text-primary'>฿275.5</span>
                       </h4>
-                      <p>LoL - 1380RP</p>
+                      <p className='text-[#fff] text-[24px] leading-[26px] font-heavent font-bold'>LoL - 1380RP</p>
                       <div>
                         <div>
                           {/* progress bar */}
@@ -501,7 +501,7 @@ function Flash() {
                             <div></div>
                           </div>
                           {/* captions */}
-                          <div> 990 LEFT </div>
+                          <div className='text-[#fff] text-[20px] leading-[40px] font-heavent font-bold'> 990 LEFT </div>
                         </div>
                       </div>
                     </div>
@@ -509,14 +509,14 @@ function Flash() {
                   {/* card_promotion_action */}
                   <div>
                     <a href="">
-                      <span> Top Up </span>
+                      <span className='mx-2 text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'> Top Up </span>
                     </a>
-                    <button>
+                    <button className='mx-2'>
                       <span>
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAALHSURBVHjarJVPSBx3HMU/M4qy4mZBexLyGzpCRKx/BqGHsiJIKLug5BbJ0mikEUJPbdEczDFHBcFcUu0at6yHtuQUxw0i5CDklENJAkkIGhbBgMlB4hKi1Xm57ARd1CS4D77wZr7ze2++fOH3LGMMB5HP578HfgbOA2eBD8ALIAfcBizgMnABOAecAV4DD4A/gIeHBI0xGGOQVCspKynQ8XhfrJMwLykmCUmE4jFJjySpUChoampKiURCTU1Nam1tVSqVku/7CoJAQRDI930NDg6qublZruuqp6dH09PT2t3dDU3+k/SNJCxjDPl8/m/g4traGgMDA6yvr3MUkskkALlc7si+67qk02lc1wVYAPosSXFgpVAokEgkjhX/UjQ0NLC0tEQ0GgX40QauAqTT6VOLA2xsbDAzMxM+XrGBOMDCwgLlgu/7If3BkhQAVmNjI3t7e2UxqKysZHV1FSCwgf8BqqqqyjZBdXV1SHds4BlAe3t72QxaWlpC+tIG7gH09fWVzaC3tzeki5ak74An29vbxONxtra2TiVeV1fHysoKtbW1AO224zhPgfvRaJSxsbFT//3IyEgongMe28X3vwI7/f39B8f7aiSTSVKpFMAO8DuADeA4zgvgF4CJiQk8z/tqcc/zmJycxLIsgOvA808GRZNZ4FYkEiGTydDZ2fnF4h0dHWQyGSKRCMCfwFTYs0u+/Q24G4vFyGazdHd3f1a8q6uL+fl5YrEYwD/AtYP9QwaO4+wDl4BsTU0Ns7OzDA8Ph2MfgmVZDA0NMTc3Fy71FpAC9o8MnIMlyZJ0MwyfxcVFtbW1yRgjY4w8z9Py8nJ49weSboQBU1pWaWSWxOcF4C/gzObmJqOjo1RUVDA+Pk59fT3Au+Jt/O9xGicaFE2+Be4ApQt5CPwEvDrpvP25JTqO8wroAUaAN8DbIu8q9k7ExwEAPP9uK0iUcMQAAAAASUVORK5CYII=" alt="gameon" />
                       </span>
                     </button>
-                    <button>
+                    <button className='mx-2'>
                       <span>
                         <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
                       </span>
@@ -526,11 +526,11 @@ function Flash() {
               </div>
             </div>
             {/* row */}
-            <div className='flex gap-4'>
+            <div className='flex gap-4 mt-4'>
               {/* col-12 */}
-              <div>
+              <div className='bg-[#d9d9d9]'>
                 {/* card */}
-                <div>
+                <div >
                   <div className='flex gap-4'>
                     {/* col-6 */}
                     <div>
@@ -546,10 +546,10 @@ function Flash() {
                     <div>
                       {/* promotion_inner */}
                       <div>
-                        <div>
+                        <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                           <span> SALE NOW </span>
                           {/* chip */}
-                          <span>
+                          <span className='ml-2'>
                             {/* chip_content */}
                             <span>
                               <p>80</p>
@@ -572,32 +572,31 @@ function Flash() {
                             </span>
                           </span>
                         </div>
-                        card_promotion_title
-                        <h3> Eggy Party </h3>
-                        <h4>
+                        <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> Eggy Party </h3>
+                        <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
                           <span>฿60</span>
                             <p>{'>'}</p>
-                          <span>฿49.8</span>
+                          <span className='text-primary'>฿49.8</span>
                         </h4>
-                        <p>120 eggy coins</p>
+                        <p className='text-[#fff] text-[24px] leading-[26px] font-heavent font-bold'>120 eggy coins</p>
                         {/* progress bar */}
                         <div></div>
                         <div></div>
                         <div></div>
                       </div>
                       {/* captions */}
-                      <div> 1000 LEF </div>
+                      <div className='text-[#fff] text-[20px] leading-[40px] font-heavent font-bold'> 1000 LEF </div>
                       {/* card_promotion_action */}
                       <div>
                         <a href="">
-                          <span> Top Up </span>
+                          <span className='mx-2 text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'> Top Up </span>
                         </a>
-                        <button>
+                        <button className='mx-2'>
                           <span>
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAALHSURBVHjarJVPSBx3HMU/M4qy4mZBexLyGzpCRKx/BqGHsiJIKLug5BbJ0mikEUJPbdEczDFHBcFcUu0at6yHtuQUxw0i5CDklENJAkkIGhbBgMlB4hKi1Xm57ARd1CS4D77wZr7ze2++fOH3LGMMB5HP578HfgbOA2eBD8ALIAfcBizgMnABOAecAV4DD4A/gIeHBI0xGGOQVCspKynQ8XhfrJMwLykmCUmE4jFJjySpUChoampKiURCTU1Nam1tVSqVku/7CoJAQRDI930NDg6qublZruuqp6dH09PT2t3dDU3+k/SNJCxjDPl8/m/g4traGgMDA6yvr3MUkskkALlc7si+67qk02lc1wVYAPosSXFgpVAokEgkjhX/UjQ0NLC0tEQ0GgX40QauAqTT6VOLA2xsbDAzMxM+XrGBOMDCwgLlgu/7If3BkhQAVmNjI3t7e2UxqKysZHV1FSCwgf8BqqqqyjZBdXV1SHds4BlAe3t72QxaWlpC+tIG7gH09fWVzaC3tzeki5ak74An29vbxONxtra2TiVeV1fHysoKtbW1AO224zhPgfvRaJSxsbFT//3IyEgongMe28X3vwI7/f39B8f7aiSTSVKpFMAO8DuADeA4zgvgF4CJiQk8z/tqcc/zmJycxLIsgOvA808GRZNZ4FYkEiGTydDZ2fnF4h0dHWQyGSKRCMCfwFTYs0u+/Q24G4vFyGazdHd3f1a8q6uL+fl5YrEYwD/AtYP9QwaO4+wDl4BsTU0Ns7OzDA8Ph2MfgmVZDA0NMTc3Fy71FpAC9o8MnIMlyZJ0MwyfxcVFtbW1yRgjY4w8z9Py8nJ49weSboQBU1pWaWSWxOcF4C/gzObmJqOjo1RUVDA+Pk59fT3Au+Jt/O9xGicaFE2+Be4ApQt5CPwEvDrpvP25JTqO8wroAUaAN8DbIu8q9k7ExwEAPP9uK0iUcMQAAAAASUVORK5CYII=" alt="gameon" />
                           </span>
                         </button>
-                        <button>
+                        <button className='mx-2'>
                           <span>
                             <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
                           </span>
@@ -608,19 +607,19 @@ function Flash() {
                 </div>
               </div>
               {/* col-12 */}
-              <div>
+              <div className='bg-[#d9d9d9]'>
                 {/* card */}
-                <div>
+                <div >
                   {/* row */}
                   <div>
                     {/* col-6 */}
                     <div>
                       {/* promotion_inner */}
                       <div>
-                        <div>
+                        <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                           <span> SALE NOW </span>
                           {/* chip */}
-                          <span>
+                          <span className='ml-2'>
                             {/* chip_content */}
                             <span>
                               <p>78</p>
@@ -643,31 +642,31 @@ function Flash() {
                             </span>
                           </span>
                         </div>
-                        <h3> TFT: Teamfight Tactics </h3>
-                        <h4>
+                        <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> TFT: Teamfight Tactics </h3>
+                        <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
                           <span>฿290</span>
                             <p>{'>'}</p>
-                          <span>฿275.5</span>
+                          <span className='text-primary'>฿275.5</span>
                         </h4>
-                        <p>1380 TFT Coins</p>
+                        <p className='text-[#fff] text-[24px] leading-[26px] font-heavent font-bold'>1380 TFT Coins</p>
                         {/* progress bar */}
                         <div></div>
                         <div></div>
                         <div></div>
                       </div>
                       {/* captions */}
-                      <div> 998 LEFT </div>
+                      <div className='text-[#fff] text-[20px] leading-[40px] font-heavent font-bold'> 998 LEFT </div>
                       {/* card_promotion_action */}
                       <div>
                         <a href="">
-                          <span> Top Up </span>
+                          <span className='mx-2 text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'> Top Up </span>
                         </a>
-                        <button>
+                        <button className='mx-2'>
                           <span>
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAALHSURBVHjarJVPSBx3HMU/M4qy4mZBexLyGzpCRKx/BqGHsiJIKLug5BbJ0mikEUJPbdEczDFHBcFcUu0at6yHtuQUxw0i5CDklENJAkkIGhbBgMlB4hKi1Xm57ARd1CS4D77wZr7ze2++fOH3LGMMB5HP578HfgbOA2eBD8ALIAfcBizgMnABOAecAV4DD4A/gIeHBI0xGGOQVCspKynQ8XhfrJMwLykmCUmE4jFJjySpUChoampKiURCTU1Nam1tVSqVku/7CoJAQRDI930NDg6qublZruuqp6dH09PT2t3dDU3+k/SNJCxjDPl8/m/g4traGgMDA6yvr3MUkskkALlc7si+67qk02lc1wVYAPosSXFgpVAokEgkjhX/UjQ0NLC0tEQ0GgX40QauAqTT6VOLA2xsbDAzMxM+XrGBOMDCwgLlgu/7If3BkhQAVmNjI3t7e2UxqKysZHV1FSCwgf8BqqqqyjZBdXV1SHds4BlAe3t72QxaWlpC+tIG7gH09fWVzaC3tzeki5ak74An29vbxONxtra2TiVeV1fHysoKtbW1AO224zhPgfvRaJSxsbFT//3IyEgongMe28X3vwI7/f39B8f7aiSTSVKpFMAO8DuADeA4zgvgF4CJiQk8z/tqcc/zmJycxLIsgOvA808GRZNZ4FYkEiGTydDZ2fnF4h0dHWQyGSKRCMCfwFTYs0u+/Q24G4vFyGazdHd3f1a8q6uL+fl5YrEYwD/AtYP9QwaO4+wDl4BsTU0Ns7OzDA8Ph2MfgmVZDA0NMTc3Fy71FpAC9o8MnIMlyZJ0MwyfxcVFtbW1yRgjY4w8z9Py8nJ49weSboQBU1pWaWSWxOcF4C/gzObmJqOjo1RUVDA+Pk59fT3Au+Jt/O9xGicaFE2+Be4ApQt5CPwEvDrpvP25JTqO8wroAUaAN8DbIu8q9k7ExwEAPP9uK0iUcMQAAAAASUVORK5CYII=" alt="gameon" />
                           </span>
                         </button>
-                        <button>
+                        <button className='mx-2'>
                           <span>
                             <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
                           </span>
