@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .display-webkit-box {
+        display: -webkit-box;
+    },
+    .line-clamp-2 {
+        -webkit-line-clamp: 2;
+    }
+}
+
+@font-face {
+    font-family: 'DBHeavent';
+    src: url('/src/assets/fonts/DB Heavent Bold.ttf') format('ttf');
+    font-weight: Bold;
+    font-style: Bold;
+}
+
+@font-face {
+    font-family: 'DBHeavent-light';
+    src: url('/src/assets/fonts/DB-HEAVENT-COND-V3.2.3417e9a.TTF') format('ttf');
+    font-weight: lighter;
+    font-style: lighter;
+}
+
+@font-face {
+    font-family: 'DBHeavent-normal';
+    src: url('/src/assets/fonts/DB-HEAVENT-MED-COND.a74e5dd.TTF') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DBHeavent-bold';
+    src: url('/src/assets/fonts/DB-HEAVENT-BD-COND-V3.2.254468d.TTF') format('ttf');
+    font-weight: Bold;
+    font-style: Bold;
+}

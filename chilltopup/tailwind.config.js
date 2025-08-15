@@ -19,6 +19,15 @@ export default {
           sm : '3rem',
         },
       },
+      display: {
+        'webkit-box': '-webkit-box',
+      },
+      fontFamily: {
+        DBheavent: ['DBHeavent', 'sans-serif'],
+        DBheavent_light: ['DBHeavent-light', 'sans-serif'],
+        DBheavent_normal: ['DBHeavent-normal', 'sans-serif'],
+        DBheavent_bold: ['DBHeavent-bold', 'sans-serif'],
+      },
     },
   },
   plugins: [],
