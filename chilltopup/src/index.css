@@ -38,3 +38,9 @@
     font-weight: Bold;
     font-style: Bold;
 }
+
+@layer utilities {
+    .hover-shadow-lime:hover {
+        box-shadow: 0 0 0 1px #b8e50a;
+    }
+}

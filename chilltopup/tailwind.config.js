@@ -28,6 +28,9 @@ export default {
         DBheavent_normal: ['DBHeavent-normal', 'sans-serif'],
         DBheavent_bold: ['DBHeavent-bold', 'sans-serif'],
       },
+      boxShadow: {
+        lime: "0 0 0 1px #b8e50a",
+      },
     },
   },
   plugins: [],
