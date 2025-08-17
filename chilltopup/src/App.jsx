@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar.jsx'
 import Hero from './components/Hero/Hero.jsx'
 import Flash from './components/Flash/Flash.jsx'
 import New from './components/New/New.jsx'
+import Why from './components/Why/Why.jsx'
 import Footer from './components/Footer/Footer.jsx'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
               <Hero/>
               <Flash />
               <New />
+              <Why />
             </div>
           </div>
         </main>
