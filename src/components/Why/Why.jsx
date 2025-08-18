@@ -11,21 +11,21 @@ function Why() {
         },
         {
             id: 2,
-            urlImage: '',
-            title: '',
-            description: ''
+            urlImage: 'https://gameon.ais.co.th/assets/_nuxt/img/why2.16e4220.png',
+            title: 'Selection of Game Titles',
+            description: 'Top game titles you can choose'
         },
         {
             id: 3,
-            urlImage: '',
-            title: '',
-            description: ''
+            urlImage: 'https://gameon.ais.co.th/assets/_nuxt/img/why3.204400b.png',
+            title: 'Sensational Promotion',
+            description: 'Enjoy our special discount and benefits'
         },
         {
             id: 4,
-            urlImage: '',
-            title: '',
-            description: ''
+            urlImage: 'https://gameon.ais.co.th/assets/_nuxt/img/why4.22780ee.png',
+            title: 'Variety of Payment Methods',
+            description: 'Wide coverage of payment channels for our convenience'
         }
     ];
 
@@ -46,7 +46,7 @@ function Why() {
                                 {/* what-if-card */}
                                 <div className='items-center flex justify-center text-center flex-wrap text-[1.25rem] font-medium
                                 tracking-[-0.1em] leading-[2rem] p-[16px] break-words '>
-                                    <h2 className='font-DBheavent text-[40px] leading-[60px] font-black'>
+                                    <h2 className='font-DBheavent text-[40px] leading-[60px] font-[700]'>
                                         {/* what-if-title-1 */}
                                         <span className='text-[#87b201]'>
                                             WHY TOP UP GAMES WITH
@@ -73,29 +73,39 @@ function Why() {
                             {cols.map( col => (
                                 <>
                                     {/* col-12 */}
-                                    <div key={col.id}>
+                                    <div key={col.id}
+                                    className='z-[1] min-[600px]:flex-[0_0_25%] min-[600px]:max-w-[25%] flex-[0_0_100%] max-w-full
+                                    p-[12px]'>
                                         {/* card-what-if */}
-                                        <div>
+                                        <div className='rounded text-[#fff] mx-auto border-solid  bg-transparent
+                                        block max-w-full outline-none no-underline transition-[box-shadow,opacity] break-words
+                                        relative whitespace-normal'>
                                             {/* row */}
-                                            <div>
+                                            <div className='rounded-br-[inherit] rounded-bl-[inherit] rounded-tl-[inherit] rounded-tr-[inherit]
+                                            justify-center flex flex-wrap flex-[1_1_auto] m-[-12px]'>
                                                 {/* col-4 */}
-                                                <div>
+                                                <div className='self-center z-[1] min-[600px]:flex-[0_0_100%] min-[600px]:max-w-full w-full p-[12px]'>
                                                     {/* card-actions */}
-                                                    <div>
+                                                    <div className='items-center justify-center flex p-[8px]'>
                                                         {/* what-if-image */}
-                                                        <img src={col.urlImage} alt="gameon" />
+                                                        <img className='border-none w-[140px] h-[140px]' src={col.urlImage} alt="gameon" />
                                                     </div>
                                                 </div>
                                                 {/* col-8 */}
-                                                <div>
+                                                <div className='self-center z-[1] min-[600px]:flex-[0_0_100%] min-[600px]:max-w-full w-full
+                                                p-[12px]'>
                                                     {/* card-details */}
-                                                    <div>
-                                                        <h3>{col.title}</h3>
+                                                    <div className='text-center flex justify-center py-[4px] px-[12px] items-center flex-wrap
+                                                    text-[1.25rem] font-medium tracking-[-0.05em] leading-[2rem] break-words'>
+                                                        <h3 className='font-DBheavent font-[700] text-[24.7px] leading-[36px] text-[#87b201]'>
+                                                            {col.title}
+                                                        </h3>
                                                     </div>
                                                     {/* card-details */}
-                                                    <div>
+                                                    <div className='text-center flex justify-center py-[4px] px-[12px] items-center flex-wrap
+                                                    text-[1.25rem] font-medium tracking-[-0.05em] leading-[2rem] break-words'>
                                                         {/* card-description */}
-                                                        <span>
+                                                        <span className='text-[18px] leading-[26px] font-[700] font-DBheavent text-[#444]'>
                                                             {col.description}
                                                         </span>
                                                     </div>

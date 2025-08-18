@@ -50,7 +50,7 @@ const ViewMore = ({ urls }) => (
     <a className='py-[0px] px-[8px] min-w-[64px] font-DBheavent text-[18px] cursor-pointer bg-[#e1e1e1] text-[#000]
     border-[0px] shadow-lg items-center inline-flex flex-[0_0_auto] font-medium tracking-[.0892857143em] justify-center
     outline-none relative no-underline indent-[.0892857143em] transition-shadow select-none align-middle
-    whitespace-nowrap w-[120px] z-[2] h-[38px] rounded-[5px] '
+    whitespace-nowrap w-[120px] z-[2] h-[38px] rounded-[5px] hover:outline-[0] hover:bg-[#c9c9c9]'
         href={urls}>
         <span className='items-center text-[18px] flex flex-[1_0_auto] justify-center leading-[normal] relative
         transition-[inherit] font-semibold'>
