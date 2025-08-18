@@ -1,129 +1,134 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
 
 function Flash() {
+  // กำหนดเวลานับถอยหลังเริ่มต้น (ตัวอย่าง: 1 ชั่วโมง 23 นาที 45 วินาที)
+  const initialSeconds = 216 * 3600 + 59 * 60 + 45;
+  const [secondsLeft, setSecondsLeft] = useState(initialSeconds);
+
+  useEffect(() => {
+    if (secondsLeft <= 0) return;
+    const timer = setInterval(() => {
+      setSecondsLeft((prev) => (prev > 0 ? prev - 1 : 0));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [secondsLeft]);
+
+  // แปลงวินาทีเป็น ชม. นาที วินาที
+  const hours = Math.floor(secondsLeft / 3600);
+  const minutes = Math.floor((secondsLeft % 3600) / 60);
+  const seconds = secondsLeft % 60;
+
+  // สร้าง chip นับถอยหลัง
+  const CountdownChip = () => (
+    <span className='bg-[rgb(237,24,70)] border-[rgb(237,24,70)] p-[0_6px] rounded-[16px] text-[#fff] text-[22px] leading-[32px] mx-[6px]'>
+      {hours.toString().padStart(2, '0')} : {minutes.toString().padStart(2, '0')} : {seconds.toString().padStart(2, '0')}
+    </span>
+  );
   return (
     <>
       {/* promotion */}
-      <div className='container flex justify-center items-center'>
+      <div className=' flex justify-center items-center' style={{ background: 'linear-gradient(0deg, #dfdfdf 5%, #fff 20%, #dfdfdf 97%)'}}>
         {/* img section */}
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img src="	https://gameon.ais.co.th/assets/_nuxt/img/SALE.91dfc89.png" alt="gameon" className='absolute top-[-200px] left-[12.5vw] width-[10vw] overflow-clip border-none' />
+        <img src="https://gameon.ais.co.th/assets/_nuxt/img/3D_geometry.448d7dc.png" alt="gameon" className='absolute top-[-260px] right-[50px] width-[50vw] max-w[762px] overflow-clip border-none' />
+        <img src="https://gameon.ais.co.th/assets/_nuxt/img/decor_xo_mobile.1601f14.png" alt="gameon" className='absolute w-[120px] right-[-30px] top-[-70px] overflow-clip hidden' />
         {/* container */}
         <div className='w-full px-[12px] mx-[280px] '>
           {/* header */}
           <div className="text-center pb-4">
-            <h1 className='text-[#000] text-[70px] leading-[72px] font-bold'>FLASH SALE</h1>
+            <h1 className='text-[#000] text-[54px] leading-[54px] font-bold font-DBHeavent'>FLASH SALE</h1>
             <div className='flex justify-center'>
               {/* underline */}
-              <div className='w-[180px] border-[6px] mt-3 border-primary'></div>
+              <div className='w-[120px] border-t-[8px] mt-3 border-[#87b201]'></div>
             </div>
           </div>
           <div>
             {/* row */}
-            <div className='flex gap-3 mb-4'>
+            <div className='flex flex-wrap gap-4 w-full justify-center'>
               {/* col */}
-              <div className='bg-[#D9D9D9]'>
+              <div className='px-2 py-2 z-[1] w-full sm:w-1/2 lg:w-1/3 max-w-full size-min-[300px]'>
                 {/* card */}
-                <div>
+                <div className='aspect-[1/1] overflow-hidden bottom-0 relative rounded-[0px] border-[thin] block max-w-full outline-none decoration-[none] transition-[box-shadow,opacity] break-words whitespace-normal'>
                   {/* thumnail */}
-                  <div>
+                  <div className='rounded-t-[inherit] overflow-hidden relative max-w-full flex z-0'>
                     {/* responsive sizer */}
-                    <div>
-
-                    </div>
+                    <div className='pb-[100%] transition-[padding-bottom] ease-[cubic-bezier(0.25,0.8,0.5,1)] duration-[0.2s] delay-0 flex-[1_0_0px]'></div>
                     {/* image */}
-                    <div className='w-[664px]'>
-                      <img src="https://gameon.ais.co.th/api/cms-data-service/product/461d6a18-8275-4d53-bb97-7db604144b4f-ign-GameOn-thumbnail_Valorant-5.jpg" alt="" />
+                    <div className='z-[-1] absolute top-0 left-0 w-full h-full ' style={{ backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat' }}>
+                      <img src="https://gameon.ais.co.th/api/cms-data-service/product/461d6a18-8275-4d53-bb97-7db604144b4f-ign-GameOn-thumbnail_Valorant-5.jpg" alt="valorant" />
                     </div>
                     {/* responsive_contetnt */}
-                    <div></div>
+                    <div className='ml-[-100%] flex-[1_0_0px] max-w-[100%]'></div>
                   </div>
                   {/* overlay */}
-                  <div>
+                  <div className='z-[5] h-[33.33333%] top-[unset] min-h-[200px] p-[20px] items-start pointer-events-auto absolute rounded-[inherit] flex justify-center left-0 right-0 bottom-0 transition-[all,z-index] ease-cubic-bezier(0.25,0.8,0.5,1) duration-[0.3s,0s] '>
                     {/* overlay_scrim */}
-                    <div></div>
+                    <div className='opacity-[0.5] bg-[#000] border-[#000] rounded-[inherit] bottom-0 h-full left-0 absolute right-0 top-0 transition-[inherit] w-full will-change-[opacity]'></div>
                       {/* overlay_content */}
-                      <div>
-                        <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
+                      <div className='w-full relative '>
+                        <div className='mr-4 text-[#fff] font-DBheavent text-[22px] leading-[22px]'>
                           <span>SALE NOW</span>
                           {/* chip */}
-                          <span className='ml-2'>
-                            {/* chip_content */}
-                            <span>
-                              <p>93</p>
-                            </span>
-                          </span>
-                          " : "
-                          {/* chip */}
-                          <span>
-                            {/* chip_content */}
-                            <span>
-                              <p>54</p>
-                            </span>
-                          </span> 
-                          " : "
-                          {/* chip */}
-                          <span>
-                            {/* chip_content */}
-                            <span>
-                              <p>23</p>
-                            </span>
-                          </span>
+                          <CountdownChip />
                         </div>
                         {/* card_promotion_title */}
-                        <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'>VALORANT</h3>
-                        <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
-                          <span>฿260</span>
-                            <p>{'>'}</p>
+                        <h3 className=' text-[#fff] text-[36px] leading-[36px] font-DBheavent font-bold overflow-hidden text-ellipsis ' style={{ '-webkit-line-clamp': '2', 'display': '-webkit-box', '-webkit-box-orient': 'vertical' }}>VALORANT</h3>
+                        <h4 className='block me-0 ms-0  text-[#fff] text-[32px] leading-[32px] font-DBheavent font-bold' style={{'unicodeBidi': 'isolate' }}>
+                          <span style={{ 'text-decoration-line': 'line-through', 'text-decoration-color': 'red', 'text-decoration-thickness': '3px'}}>฿260</span>
+                            <p className='mx-4 items-center inline-flex text-[24px] justify-center relative align-middle transition-[all,visibility] ease-cubic-bezier(0.25,0.8,0.5,1) duration-[0.3s,0s] delay-0' style={{'fontFeatureSettings': 'liga', 'letterSpacing': 'normal', 'lineHeight': '1', 'textIndent': '0', 'userSelect': 'none'}}>{'>'}</p>
                           <span className='text-primary'>฿247</span>
                         </h4>
-                        <p className='text-[#fff] text-[24px] leading-[26px] font-heavent font-bold'>1000 VP</p>
-                        <div>
-                          <div>
+                        <p className=' text-[#fff] text-[24px] leading-[26px] font-DBheavent mb-0 '>1000 VP</p>
+                        <div className='flex'>
+                          <div className='max-w-[50%] flex-[1_1_auto]'>
                             {/* progress bar */}
-                            <div>
-                              <div></div>
-                              <div></div>
-                              <div></div>
+                            <div className='h-1 mt-1 border-[#fff] border-solid border-[3px] rounded-[4px] bg-transparent relative overflow-hidden w-full transition-[all] ease-[cubic-bezier(0.4,0,0.6,1)] duration-[0.2s] delay-0'>
+                              {/*v-progress-linear_background*/}
+                              <div className='opacity-[1] left-[0.7%] w-[99.3%] bg-[#fff] border-[#fff] bottom-0 top-0 absolute transition-[inherit]'></div>
+                              {/*v-progress-linear_buffer*/}
+                              <div className='h-[inherit] left-0 top-0 absolute transition-[inherit] w-full'></div>
+                              {/*v-progress-linear_determinate*/}
+                              <div className='w-[0.7%] bg-[rgb(186,255,0)] border-[rgb(186,255,0)] absolute transition-[inherit] h-[inherit] left-0'></div>
                             </div>
-                            <div className='text-[#fff] text-[20px] leading-[40px] font-heavent font-bold'> 997 LEFT </div>
+                            {/* caption */}
+                            <div className='mt-2 text-[#8f8f8f] text-[20px] leading-[22px] font-DBheavent font-bold'> 997 LEFT </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                {/* card promotion action */}
-                <div>
-                  <a href="">
-                    <span className='mx-2 text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'> Top Up </span>
-                  </a>
-                  <button className='mx-2'>
-                    <span>
-                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAALHSURBVHjarJVPSBx3HMU/M4qy4mZBexLyGzpCRKx/BqGHsiJIKLug5BbJ0mikEUJPbdEczDFHBcFcUu0at6yHtuQUxw0i5CDklENJAkkIGhbBgMlB4hKi1Xm57ARd1CS4D77wZr7ze2++fOH3LGMMB5HP578HfgbOA2eBD8ALIAfcBizgMnABOAecAV4DD4A/gIeHBI0xGGOQVCspKynQ8XhfrJMwLykmCUmE4jFJjySpUChoampKiURCTU1Nam1tVSqVku/7CoJAQRDI930NDg6qublZruuqp6dH09PT2t3dDU3+k/SNJCxjDPl8/m/g4traGgMDA6yvr3MUkskkALlc7si+67qk02lc1wVYAPosSXFgpVAokEgkjhX/UjQ0NLC0tEQ0GgX40QauAqTT6VOLA2xsbDAzMxM+XrGBOMDCwgLlgu/7If3BkhQAVmNjI3t7e2UxqKysZHV1FSCwgf8BqqqqyjZBdXV1SHds4BlAe3t72QxaWlpC+tIG7gH09fWVzaC3tzeki5ak74An29vbxONxtra2TiVeV1fHysoKtbW1AO224zhPgfvRaJSxsbFT//3IyEgongMe28X3vwI7/f39B8f7aiSTSVKpFMAO8DuADeA4zgvgF4CJiQk8z/tqcc/zmJycxLIsgOvA808GRZNZ4FYkEiGTydDZ2fnF4h0dHWQyGSKRCMCfwFTYs0u+/Q24G4vFyGazdHd3f1a8q6uL+fl5YrEYwD/AtYP9QwaO4+wDl4BsTU0Ns7OzDA8Ph2MfgmVZDA0NMTc3Fy71FpAC9o8MnIMlyZJ0MwyfxcVFtbW1yRgjY4w8z9Py8nJ49weSboQBU1pWaWSWxOcF4C/gzObmJqOjo1RUVDA+Pk59fT3Au+Jt/O9xGicaFE2+Be4ApQt5CPwEvDrpvP25JTqO8wroAUaAN8DbIu8q9k7ExwEAPP9uK0iUcMQAAAAASUVORK5CYII=" alt="gameon" />
-                    </span>
-                  </button>
-                  <button className='mx-2'>
-                    <span>
-                      <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
-                    </span>
-                  </button>
+                  {/* card promotion action */}
+                  <div className='relative   z-[6]'>
+                    <a href="https://gameon.ais.co.th/games/valorant-pid-633ff5c7077a1c0012aecbf4" className='bg-[rgba(8,8,8,0.5)] h-10 w-[100px] font-DBheavent text-[22px] leading-[22px] text-[#fff]  rounded-[8px] flex items-center justify-center cursor-pointer absolute '>
+                      <span className=''>Top Up</span>
+                    </a>
+                    <button className='text-[#fff] h-[36px] w-[36px] text-[14px] cursor-pointer rounded-[50%] items-center inline-flex font-medium justify-center relative outline-0 duration-[0.28s] transition-[box-shadow,transform,opacity] ease-[cubic-bezier(0.4,0,.2,1)] align-middle whitespace-nowrap select-none bg-transparent border-none overflow-visible'>
+                      <span className='items-center text-[#fff] flex flex-[1_0_auto] justify-center relative transition-[opacity]'>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAALHSURBVHjarJVPSBx3HMU/M4qy4mZBexLyGzpCRKx/BqGHsiJIKLug5BbJ0mikEUJPbdEczDFHBcFcUu0at6yHtuQUxw0i5CDklENJAkkIGhbBgMlB4hKi1Xm57ARd1CS4D77wZr7ze2++fOH3LGMMB5HP578HfgbOA2eBD8ALIAfcBizgMnABOAecAV4DD4A/gIeHBI0xGGOQVCspKynQ8XhfrJMwLykmCUmE4jFJjySpUChoampKiURCTU1Nam1tVSqVku/7CoJAQRDI930NDg6qublZruuqp6dH09PT2t3dDU3+k/SNJCxjDPl8/m/g4traGgMDA6yvr3MUkskkALlc7si+67qk02lc1wVYAPosSXFgpVAokEgkjhX/UjQ0NLC0tEQ0GgX40QauAqTT6VOLA2xsbDAzMxM+XrGBOMDCwgLlgu/7If3BkhQAVmNjI3t7e2UxqKysZHV1FSCwgf8BqqqqyjZBdXV1SHds4BlAe3t72QxaWlpC+tIG7gH09fWVzaC3tzeki5ak74An29vbxONxtra2TiVeV1fHysoKtbW1AO224zhPgfvRaJSxsbFT//3IyEgongMe28X3vwI7/f39B8f7aiSTSVKpFMAO8DuADeA4zgvgF4CJiQk8z/tqcc/zmJycxLIsgOvA808GRZNZ4FYkEiGTydDZ2fnF4h0dHWQyGSKRCMCfwFTYs0u+/Q24G4vFyGazdHd3f1a8q6uL+fl5YrEYwD/AtYP9QwaO4+wDl4BsTU0Ns7OzDA8Ph2MfgmVZDA0NMTc3Fy71FpAC9o8MnIMlyZJ0MwyfxcVFtbW1yRgjY4w8z9Py8nJ49weSboQBU1pWaWSWxOcF4C/gzObmJqOjo1RUVDA+Pk59fT3Au+Jt/O9xGicaFE2+Be4ApQt5CPwEvDrpvP25JTqO8wroAUaAN8DbIu8q9k7ExwEAPP9uK0iUcMQAAAAASUVORK5CYII=" alt="gameon" />
+                      </span>
+                    </button>
+                    <button className='mx-2'>
+                      <span>
+                        <img className='w-9 h-9' src="//icons.veryicon.com/png/o/miscellaneous/home-ams-icon-library/ic_share.png" alt="gameon" />
+                      </span>
+                    </button>
+                  </div>
                 </div>
-              </div>
               {/* col-md-6 col-12 */}
-              <div>
+              <div className='px-2 py-2 z-[1] w-full sm:w-1/2 lg:w-1/3 max-w-full'>
                 {/* contain-merge */}
-                <div className='grid gap-4'>
+                <div className='aspect-[1/1] '>
                   {/* card */}
-                  <div>
+                  <div className='mb-2 aspect-[unset] overflow-hidden bg-[#1e1e1e] text-[#fff] rounded-none border-[#1e1e1e] border-[thin] block max-w-100% outline-none transition-[opacity,box-shadow] relative whitespace-normal' style={{'height': 'calc(50% - 4px)', 'textDecoration': 'none', 'wordBreak': 'break-word'}}>
                     {/* row */}
-                    <div className='flex gap-4'>
+                    <div className='m-0 flex flex-wrap flex-[1_1_auto] h-full'>
                       {/* col col-6 */}
-                      <div>
+                      <div className='p-0 z-[1] flex-[0_0_50%] max-w-[50%]'>
                         {/* image responsive */}
-                        <div>
+                        <div className='text-[#fff] relative overflow-hidden flex-[1_0_auto] max-w-full flex z-[0] h-full'>
                           {/* responsive_sizer */}
-                          <div></div>
+                          <div className='transition-[padding-bottom] ease-[cubic-bezier(0.25,0.8,0.5,1)] duration-[0.2s] delay-0 flex-[1_0_0]'></div>
                           {/* image */}
                           <div className='w-[332px]'>
                             <img src="https://gameon.ais.co.th/api/cms-data-service/product/cea62c2f-3d82-4e41-b6dc-d0973fba3831-ign-240524-FC-mobile-logo.png" alt="" />
@@ -133,34 +138,13 @@ function Flash() {
                         </div>
                       </div>
                       {/* col col-6 */}
-                      <div className='bg-[#D9D9D9]'>
+                      <div className='p-1 z-[1] flex-[0_0_50%] max-w-[50%]'>
                         {/* promotion-inner */}
                         <div >
                           <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                             <span> SALE NOW </span>
                             {/* chip */}
-                            <span className='ml-2'>
-                              {/* chip_content */}
-                              <span>
-                                <p>82</p>
-                              </span>
-                            </span>
-                            " - "
-                            {/* chip */}
-                            <span>
-                              {/* chip_content */}
-                              <span>
-                                <p>08</p>
-                              </span>
-                            </span>
-                            " - "
-                            {/* chip */}
-                            <span>
-                              {/* chip_content */}
-                              <span>
-                                <p>42</p>
-                              </span>
-                            </span>
+                            <CountdownChip />
                           </div>
                           {/* card-promotion-title */}
                           <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> EA SPORTS FC™ MOBILE 24 </h3>
@@ -200,29 +184,14 @@ function Flash() {
                   {/* card */}
                   <div>
                     {/* row */}
-                    <div className='flex gap-4 '>
+                    <div className=''>
                       {/* col col-6 */}
                       <div className='bg-[#d9d9d9]'>
                         {/* promotion_inner */}
                         <div >
-                          <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
+                          <div className='flex text-[#fff] text-[22px] leading-[22px] font-DBheavent font-bold'>
                             <span> SALE NOW </span>
-                            <span className='ml-2'>
-                              <span>
-                                <p>81</p>
-                              </span>
-                            </span>
-                            " : "
-                            <span>
-                              <span>
-                                <p>53</p>
-                              </span>
-                            </span>
-                            - " : "<span>
-                              <span>
-                                <p>31</p>
-                              </span>
-                            </span>
+                            <CountdownChip />
                           </div>
                           {/* card_promotion_title */}
                           <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> Genshin Impact </h3>
@@ -297,28 +266,7 @@ function Flash() {
                       <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                         <span> SALE NOW </span>
                         {/* chip */}
-                        <span className='ml-2'>
-                          {/* chip_content */}
-                          <span>
-                            <p>81</p>
-                          </span>
-                        </span>
-                        " : "
-                        {/* chip */}
-                        <span>
-                          {/* chip_content */}
-                          <span>
-                            <p>17</p>
-                          </span>
-                        </span>
-                        " : "
-                        {/* chip */}
-                        <span>
-                          {/* chip_content */}
-                          <span>
-                            <p>10</p>
-                          </span>
-                        </span>
+                        <CountdownChip />
                       </div>
                       <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'>Harry Potter: Magic Awakened</h3>
                       <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
@@ -379,28 +327,7 @@ function Flash() {
                       <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                         <span> SALE NOW </span>
                         {/* chip */}
-                        <span className='ml-2'>
-                          {/* chip_content */}
-                          <span>
-                            <p>80</p>
-                          </span>
-                        </span>
-                        " : "
-                        {/* chip */}
-                        <span>
-                          {/* chip_content */}
-                          <span>
-                            <p>58</p>
-                          </span>
-                        </span>
-                        " : "
-                        {/* chip */}
-                        <span>
-                          {/* chip_content */}
-                          <span>
-                            <p>40</p>
-                          </span>
-                        </span>
+                        <CountdownChip />
                       </div>
                       <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> Onmyoji Arena </h3>
                       <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
@@ -462,28 +389,7 @@ function Flash() {
                       <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                         <span> SALE NOW </span>
                         {/* chip */}
-                        <span className='ml-2'>
-                          {/* chip_content */}
-                          <span>
-                            <p>80</p>
-                          </span>
-                        </span>
-                        " : "
-                        {/* chip */}
-                        <span>
-                          {/* chip_content */}
-                          <span>
-                            <p>49</p>
-                          </span>
-                        </span>
-                        " : "
-                        {/* chip */}
-                        <span>
-                          {/* chip_content */}
-                          <span>
-                            <p>20</p>
-                          </span>
-                        </span>
+                        <CountdownChip />
                       </div>
                       <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> League of Legends (PC) </h3>
                       <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
@@ -549,28 +455,7 @@ function Flash() {
                         <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                           <span> SALE NOW </span>
                           {/* chip */}
-                          <span className='ml-2'>
-                            {/* chip_content */}
-                            <span>
-                              <p>80</p>
-                            </span>
-                          </span>
-                          " : "
-                          {/* chip */}
-                          <span>
-                            {/* chip_content */}
-                            <span>
-                              <p>36</p>
-                            </span>
-                          </span>
-                          " : "
-                          {/* chip */}
-                          <span>
-                            {/* chip_content */}
-                            <span>
-                              <p>08</p>
-                            </span>
-                          </span>
+                          <CountdownChip />
                         </div>
                         <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> Eggy Party </h3>
                         <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
@@ -619,28 +504,7 @@ function Flash() {
                         <div className='flex text-[#fff] text-[22px] leading-[22px] font-heavent font-bold'>
                           <span> SALE NOW </span>
                           {/* chip */}
-                          <span className='ml-2'>
-                            {/* chip_content */}
-                            <span>
-                              <p>78</p>
-                            </span>
-                          </span>
-                          " : "
-                          {/* chip */}
-                          <span>
-                            {/* chip_content */}
-                            <span>
-                              <p>49</p>
-                            </span>
-                          </span>
-                          " : "
-                          {/* chip */}
-                          <span>
-                            {/* chip_content */}
-                            <span>
-                              <p>78</p>
-                            </span>
-                          </span>
+                          <CountdownChip />
                         </div>
                         <h3 className='text-[#fff] text-[36px] leading-[36px] font-heavent font-bold'> TFT: Teamfight Tactics </h3>
                         <h4 className='flex text-[#fff] text-[32px] leading-[32px] font-heavent font-bold'>
