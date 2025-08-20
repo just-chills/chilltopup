@@ -1,0 +1,103 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;  /* กำหนดขนาดสูงสุดของ carousel */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;   /* สำคัญ: ให้ปุ่มอิงกับ slide แต่ละอัน */
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.slick-slide > div { margin: 0 10px; /* เว้นช่องว่างระหว่างรูป */ }
+
+.arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.next-arrow {
+  right: 38.4rem;
+}
+
+.prev-arrow {
+  left: 38.4rem;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .next-arrow {
+    right: 1rem;
+  }
+
+  .prev-arrow {
+    left: 1rem;
+  }
+}
+
+
+/* ปิด before ของ slick เอง */
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slider-container img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+/* ซ่อน style เดิมของ slick */
+.custom-dots li button:before {
+    display: none;
+}
+
+/* กล่องเก็บ dots ให้เรียงกลาง */
+.custom-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* ระยะห่างเท่ากันทุก dot */
+    padding: 0;
+    margin: 0;
+}
+
+/* dot ปกติ */
+.custom-dot {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* dot active – ขยายออกทั้งซ้ายและขวา */
+.slick-active .custom-dot {
+    background: #baff00;
+    height: 12px;
+    width: 12px;
+    border-radius: 20px;
+    transform: scaleX(2.5); /* ขยายกว้างขึ้นแบบสมมาตร */
+}

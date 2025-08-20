@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar.jsx'
-
 import Hero from './components/Hero/Hero.jsx'
+import Menu from './components/Menu/Menu.jsx'
+import Sel_game from './components/Sel_game/Game.jsx'
 import Flash from './components/Flash/Flash.jsx'
 import New from './components/New/New.jsx'
 import Why from './components/Why/Why.jsx'
@@ -18,6 +19,8 @@ function App() {
           <div className='flex-auto max-w-full relative overflow-hidden'>
             <div>
               <Hero/>
+              <Menu/>
+              <Sel_game />
               <Flash />
               <New />
               <Why />
