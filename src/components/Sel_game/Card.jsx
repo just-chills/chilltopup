@@ -24,7 +24,7 @@ const Card = ({ image, name, topUpLink }) => {
   return (
     <div  
       onClick={() => window.location.href = topUpLink}
-      className="group w-56 bg-secondary shadow-lg rounded-lg overflow-hidden flex flex-col justify-between relative cursor-pointer 
+      className="group w-56 bg-gray-800 shadow-lg rounded-lg overflow-hidden flex flex-col justify-between relative cursor-pointer 
                  border-2 border-transparent hover:border-primary transition-all duration-200"
     >
       {/* รูปเกม */}

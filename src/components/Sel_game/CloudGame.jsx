@@ -29,7 +29,7 @@ const Cloud = ({ image, name, topUpLink, description }) => {
 
   return (
 <div
-    className={`group bg-secondary shadow-lg rounded-lg overflow-hidden flex flex-col justify-between relative cursor-pointer 
+    className={`group bg-gray-800 shadow-lg rounded-lg overflow-hidden flex flex-col justify-between relative cursor-pointer 
                 border-2 border-transparent hover:border-primary transition-all duration-300
                 ${expanded ? 'h-auto' : 'h-auto'} w-[24rem] self-start p-2 m-4`}
     >
