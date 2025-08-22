@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 
-const Game = ({ image, name, topUpLink }) => {
+const Card = ({ image, name, topUpLink }) => {
   const [liked, setLiked] = useState(false);
   const [showEffect, setShowEffect] = useState(false);
 
   // ✅ เช็คว่า image นี้ควร resize หรือไม่
-  const zoomImages = [
-    'https://gameon.ais.co.th/api/cms-data-service/product/ca16707f-f566-4673-bbe1-60d807707299-ign-Ragnarok-X-New-Generation-image-640x450.png',
-    'https://gameon.ais.co.th/api/cms-data-service/product/88de6a83-82ce-4701-bb1d-665b16ee3ab5-ign-Cookie%205.jpg',
-  ];
+  const zoomImages = [];
 
   const shouldZoom = zoomImages.includes(image);
 
@@ -74,124 +71,40 @@ const Game = ({ image, name, topUpLink }) => {
 };
 
 
-const games = [
+const Cards = [
   {
     id: 1,
-    name: 'VALORANT',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/461d6a18-8275-4d53-bb97-7db604144b4f-ign-GameOn-thumbnail_Valorant-5.jpg',
+    name: 'Razer Gold pin',
+    image: 'https://gameon.ais.co.th/api/cms-data-service/product/5b84460f-1c93-4f9b-8fde-1e0a05d7ab1f-ign-Razer.jpg',
     topUpLink: '/topup/valorant',
   },
   {
     id: 2,
-    name: 'TFT: Teamfight Tactics',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/a176adf3-b6c0-4940-b603-8dc356116813-ign-GameOn-thumbnail_TFT-5.jpg',
+    name: 'LINE Prepaid Card',
+    image: 'https://gameon.ais.co.th/api/cms-data-service/product/f471df72-0928-41dc-9e7a-00a03784107c-ign-Line.jpg',
     topUpLink: '/topup/rov',
   },
   {
     id: 3,
-    name: 'Genshin Impact',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/eeffaed8-6f61-41b8-b76a-022ca7ce89bd-ign-genshin%20logo%20new.jpg',
+    name: 'Cookie Card',
+    image: 'https://gameon.ais.co.th/api/cms-data-service/product/88de6a83-82ce-4701-bb1d-665b16ee3ab5-ign-Cookie%205.jpg',
     topUpLink: '/topup/freefire',
   },
   {
     id: 4,
-    name: 'League of Legends',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/b72a9aaf-7d25-4c6a-b58c-1aedd77a35c0-ign-GameOn-thumbnail_LoL-5.jpg',
+    name: 'VIU Premium Card',
+    image: 'https://gameon.ais.co.th/api/cms-data-service/product/29e2707f-a127-4739-9318-ebbcdbf7c919-ign-VIU.jpg',
     topUpLink: '/topup/pubg',
-  },
-  {
-    id: 5,
-    name: 'Identity V',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/66c67ffc-df77-4180-a061-312a8a571516-ign-identity-v-logo.jpg',
-    topUpLink: '/topup/codm',
-  },
-  {
-    id: 6,
-    name: 'EA SPORTS FC™ MOBILE 24',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/cea62c2f-3d82-4e41-b6dc-d0973fba3831-ign-240524-FC-mobile-logo.png',
-    topUpLink: '/topup/freefire',
-  },
-  {
-    id: 7,
-    name: 'Onmyoji Arena',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/e5725b94-c531-4fd6-af57-fa5c257d46bc-ign-Onmyo15-may25-TN.jpg',
-    topUpLink: '/topup/pubg',
-  },
-  {
-    id: 8,
-    name: 'League of Legends: Wild Rift',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/1615bfcb-15a6-4cd7-94f9-2b1df70baab1-ign-lol%20wr%20logo.jpeg',
-    topUpLink: '/topup/codm',
-  },
-  {
-    id: 9,
-    name: 'Ragnarok X Next Generation',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/ca16707f-f566-4673-bbe1-60d807707299-ign-Ragnarok-X-New-Generation-image-640x450.png',
-    topUpLink: '/topup/freefire',
-  },
-  {
-    id: 10,
-    name: 'Eggy Party',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/e01eba68-39b7-42c4-9a95-1773e3971e5e-ign-eggy-party.jpg',
-    topUpLink: '/topup/ragnarokx',
-  },
-  {
-    id: 11,
-    name: 'Blood of Strike',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/39c6d1fa-a9a4-4e80-8124-f58e3bbcf661-ign-blood%20Icon%201.jpg',
-    topUpLink: '/topup/rov',
-  },
-  {
-    id: 12,
-    name: 'League of Runeterra',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/1670405455776.jpeg',
-    topUpLink: '/topup/pubg',
-  },
-  {
-    id: 13,
-    name: 'MU ORIGIN 3',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/1670398155684.jpeg',
-    topUpLink: '/topup/cod',
-  },
-  {
-    id: 14,
-    name: 'Harry Potter: Magic Awakened',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/05b0c664-aa68-4ef8-8ee4-132fd93cdab0-ign-harry%20(1).png',
-    topUpLink: '/topup/fifaonline4',
-  },
-  {
-    id: 15,
-    name: 'One Punch Man: The Strongest',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/0eb0eedf-bc15-4ff0-b79f-dcb7bbd195e0-ign-TT-rateup1.jpg',
-    topUpLink: '/topup/lolwildrift',
-  },
-  {
-    id: 16,
-    name: 'Ace Racer',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/c7f7af02-330e-4b06-bee1-f744671ae064-ign-Screenshot_8.jpg',
-    topUpLink: '/topup/aov',
-  },
-  {
-    id: 17,
-    name: 'Heroes Evolved',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/1670403829576.jpeg',
-    topUpLink: '/topup/genshinimpact',
-  },
-  {
-    id: 18,
-    name: 'Ragnarok M: Eternal Love',
-    image: 'https://gameon.ais.co.th/api/cms-data-service/product/1670399156387.jpeg',
-    topUpLink: '/topup/identityv',
   },
 ];
 
-const GameList = () => {
+const CardList = () => {
   return (
     <div className="container mx-auto px-4 mt-4">
       {/* Grid แสดงการ์ดเกม */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-2 gap-y-4">
-        {games.map((item) => (
-          <Game
+        {Cards.map((item) => (
+          <Card
             key={item.id}
             image={item.image}
             name={item.name}
@@ -199,17 +112,8 @@ const GameList = () => {
           />
         ))}
       </div>
-      {/* ✅ ปุ่มไว้ล่วงหน้า */}
-      <div className="mt-6 flex justify-center">
-        <button
-          className="px-6 py-3 bg-gray-200 text-black rounded-lg hover:bg-gray-300 transition font-semibold"
-          onClick={() => alert('จะลิงก์ไปหน้ารวมทั้งหมดในอนาคต')}
-        >
-        ดูทั้งหมด
-        </button>
-      </div>
     </div>
   );
 };
 
-export default GameList;
+export default CardList;
