@@ -100,7 +100,7 @@ const Cards = [
 
 const CardList = () => {
   return (
-    <div className="container mx-auto px-4 mt-4">
+    <div className="container mx-auto px-4 m-4 mt-4">
       {/* Grid แสดงการ์ดเกม */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-2 gap-y-4">
         {Cards.map((item) => (

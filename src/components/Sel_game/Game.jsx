@@ -200,7 +200,7 @@ const GameList = () => {
         ))}
       </div>
       {/* ✅ ปุ่มไว้ล่วงหน้า */}
-      <div className="mt-6 flex justify-center">
+      <div className="m-4 mt-6 flex justify-center">
         <button
           className="px-6 py-3 bg-gray-200 text-black rounded-lg hover:bg-gray-300 transition font-semibold"
           onClick={() => alert('จะลิงก์ไปหน้ารวมทั้งหมดในอนาคต')}
